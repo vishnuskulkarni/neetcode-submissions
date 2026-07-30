@@ -1,0 +1,17 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # hash-map 
+        store = {} # value : index 
+
+        for i, v in enumerate(nums):
+            diff = target - v
+            if diff in store:
+                return [store[diff], i]
+            else:
+                store[v] = i
+
+
+
+        
+    
+        
